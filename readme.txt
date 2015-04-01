@@ -22,6 +22,19 @@ Rescue Shortcodes is a lightweight WordPress shortcodes plugin that when activat
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Click the Rescue Themes icon in the WordPress text editor to display your shortcodes options.
 
+**Available Shortcodes**
+
+* Spacing
+* Highlight text
+* Buttons
+* Alert Box
+* Grid Columns
+* Toggle Box
+* Tab Group
+* Google Map
+* Font Awesome Icons
+* Animate Content
+
 **New features**
 
 We want to improve the Rescue Shortcodes plugin based on your feedback! Please let us know via the plugin's [support tab](https://wordpress.org/support/plugin/rescue-shortcodes) and [subscribe to our mailing list](http://rescuethemes.us6.list-manage.com/subscribe?u=e996b9d9a5&id=a41af7345e) to get notified of new developments.
