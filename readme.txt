@@ -11,17 +11,27 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 A lightweight WordPress shortcodes plugin.
 
-=== Description ===
+==Description==
 
 When activated, this plugin will add a button to the WordPress text editor to easily insert shortcodes to your posts or pages.
 
-=== Installation ===
+**Installation**
 
 1. Upload the plugin to `/wp-content/plugins/`. Alternately, you can download this package as a zip and upload it via the WordPress dashboard.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Click the Rescue Themes icon in the WordPress text editor to display your shortcodes options.
 
-=== Frequently Asked Questions ===
+**New features**
+
+We want to improve the Rescue Shortcodes plugin based on your feedback! Please let us know via the plugin's support tab and [subscribe to our mailing list](http://rescuethemes.us6.list-manage.com/subscribe?u=e996b9d9a5&id=a41af7345e) to get notified of new developments.
+
+==Frequently Asked Questions==
+
+Are there examples of the shortcodes?
+
+You can view examples of the shortcode below:
+
+[https://rescuethemes.com/plugins/rescue-shortcodes-plugin/](https://rescuethemes.com/plugins/rescue-shortcodes-plugin/)
 
 Where can I check out themes by Rescue Themes?
 
@@ -29,24 +39,11 @@ Glad you asked! Here's our current portfolio of themes:
 
 http://rescuethemes.com/themes-plugins
 
-== License Info ==
-Font Awesome - ​http://fontawesome.io
-Fonts: SIL OFL 1.1, CSS: MIT License - http://fontawesome.io/license
-Copyright: @davegandy
+==Screenshots==
 
-Wow.js - ​https://github.com/matthieua/WOW
-MIT License - https://github.com/matthieua/WOW/blob/master/LICENSE-MIT
-Copyright: @mattaussaguel
+1. The Rescue Shortcodes toggle will appear in your text editor.
 
-animate.css - ​https://github.com/daneden/animate.css
-MIT License - https://github.com/daneden/animate.css#license
-Copyright: @_dte
-
-Waypoints - https://github.com/imakewebthings/waypoints
-MIT License - https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
-Copyright: @foodgoesinmouth
-
-== Changelog ==
+==Changelog==
 = 1.6 =
 * Updated to Font Awesome v4.3.0
 * Updated to wow.js to v1.0.3
