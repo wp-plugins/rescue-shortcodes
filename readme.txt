@@ -3,7 +3,7 @@
 Plugin Name: Rescue Shortcodes
 Contributors: rescuethemes
 Donate link: https://rescuethemes.com
-Tags: plugin, widget, shortcodes
+Tags: plugin, widget, shortcodes, tinymce, lightweight, minimal, simple
 Requires at least: 3.0
 Tested up to: 4.0
 Stable tag: 1.6
