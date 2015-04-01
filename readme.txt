@@ -58,7 +58,7 @@ Glad you asked! Here's our current portfolio of themes and plugins:
 1. The Rescue Shortcodes toggle will appear in your text editor.
 
 ==Changelog==
-= 1.6 =
+= 1.6 - March 30th, 2015 =
 * Updated to Font Awesome v4.3.0
 * Updated to wow.js to v1.0.3
 
