@@ -1,4 +1,5 @@
-=== Plugin Details ===
+=== Rescue Shortcodes ===
+
 Plugin Name: Rescue Shortcodes
 Contributors: rescuethemes
 Donate link: https://rescuethemes.com
@@ -9,11 +10,11 @@ Stable tag: 1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A lightweight WordPress shortcodes plugin.
+Rescue Shortcodes is a lightweight WordPress shortcodes plugin that when activated, will add a button to the WordPress text editor to easily insert shortcodes to your posts or pages.
 
 ==Description==
 
-When activated, this plugin will add a button to the WordPress text editor to easily insert shortcodes to your posts or pages.
+Rescue Shortcodes is a lightweight WordPress shortcodes plugin that when activated, will add a button to the WordPress text editor to easily insert shortcodes to your posts or pages.
 
 **Installation**
 
