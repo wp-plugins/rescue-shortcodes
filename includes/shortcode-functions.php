@@ -1,13 +1,13 @@
 <?php
 
-/*----------------------------------------------------*/
-/*  Allow shortcodes in widgets
-/*----------------------------------------------------*/
+/**
+ * Allow shortcodes in widgets
+ */
 add_filter('widget_text', 'do_shortcode');
 
-/*----------------------------------------------------*/
-/*  Fix Shortcodes
-/*----------------------------------------------------*/
+/**
+ * Fix Shortcodes
+ */
 if( !function_exists('rescue_fix_shortcodes') ) {
 	function rescue_fix_shortcodes($content){   
 		$array = array (
@@ -21,9 +21,9 @@ if( !function_exists('rescue_fix_shortcodes') ) {
 	add_filter('the_content', 'rescue_fix_shortcodes');
 }
 
-/*----------------------------------------------------*/
-/*  Clear Floats
-/*----------------------------------------------------*/
+/**
+ * Clear Floats
+ */
 if( !function_exists('rescue_clear_floats_shortcode') ) {
 	function rescue_clear_floats_shortcode() {
 	   return '<div class="rescue-clear-floats"></div>';
@@ -31,9 +31,9 @@ if( !function_exists('rescue_clear_floats_shortcode') ) {
 	add_shortcode( 'rescue_clear_floats', 'rescue_clear_floats_shortcode' );
 }
 
-/*----------------------------------------------------*/
-/*  Spacing
-/*----------------------------------------------------*/
+/**
+ * Spacing
+ */
 if( !function_exists('rescue_spacing_shortcode') ) {
 	function rescue_spacing_shortcode( $atts ) {
 		extract( shortcode_atts( array(
@@ -46,9 +46,9 @@ if( !function_exists('rescue_spacing_shortcode') ) {
 	add_shortcode( 'rescue_spacing', 'rescue_spacing_shortcode' );
 }
 
-/*----------------------------------------------------*/
-/*  Highlights
-/*----------------------------------------------------*/
+/**
+ * Highlights
+ */
 if ( !function_exists( 'rescue_highlight_shortcode' ) ) {
 	function rescue_highlight_shortcode( $atts, $content = null ) {
 		extract( shortcode_atts( array(
@@ -63,9 +63,9 @@ if ( !function_exists( 'rescue_highlight_shortcode' ) ) {
 	add_shortcode('rescue_highlight', 'rescue_highlight_shortcode');
 }
 
-/*----------------------------------------------------*/
-/*  Buttons
-/*----------------------------------------------------*/
+/**
+ * Buttons
+ */
 if( !function_exists('rescue_button_shortcode') ) {
 	function rescue_button_shortcode( $atts, $content = null ) {
 		extract( shortcode_atts( array(
@@ -103,9 +103,9 @@ if( !function_exists('rescue_button_shortcode') ) {
 	add_shortcode('rescue_button', 'rescue_button_shortcode');
 }
 
-/*----------------------------------------------------*/
-/*  Boxes
-/*----------------------------------------------------*/
+/**
+ * Boxes
+ */
 if( !function_exists('rescue_box_shortcode') ) { 
 	function rescue_box_shortcode( $atts, $content = null ) {
 		extract( shortcode_atts( array(
@@ -135,9 +135,9 @@ if( !function_exists('rescue_box_shortcode') ) {
 	add_shortcode('rescue_box', 'rescue_box_shortcode');
 }
 
-/*----------------------------------------------------*/
-/*  Columns
-/*----------------------------------------------------*/
+/**
+ * Columns
+ */
 if( !function_exists('rescue_column_shortcode') ) {
 	function rescue_column_shortcode( $atts, $content = null ){
 		extract( shortcode_atts( array(
@@ -151,9 +151,9 @@ if( !function_exists('rescue_column_shortcode') ) {
 	add_shortcode('rescue_column', 'rescue_column_shortcode');
 }
 
-/*----------------------------------------------------*/
-/*  Toggle
-/*----------------------------------------------------*/
+/**
+ * Toggle
+ */
 if( !function_exists('rescue_toggle_shortcode') ) {
 	function rescue_toggle_shortcode( $atts, $content = null ) {
 		extract( shortcode_atts( array(
@@ -171,9 +171,9 @@ if( !function_exists('rescue_toggle_shortcode') ) {
 	add_shortcode('rescue_toggle', 'rescue_toggle_shortcode');
 }
 
-/*----------------------------------------------------*/
-/*  General Tab Group
-/*----------------------------------------------------*/
+/**
+ * Tab Group
+ */
 if (!function_exists('rescue_tabgroup_shortcode')) {
 	function rescue_tabgroup_shortcode( $atts, $content = null ) {
 		
@@ -217,9 +217,9 @@ if (!function_exists('rescue_tab_shortcode')) {
 	add_shortcode( 'rescue_tab', 'rescue_tab_shortcode' );
 }
 
-/*----------------------------------------------------*/
-/*  Donation Tab Group
-/*----------------------------------------------------*/
+/**
+ * Donation Tab Group
+ */
 if (!function_exists('rescue_donation_tabgroup_shortcode')) {
 	function rescue_donation_tabgroup_shortcode( $atts, $content = null ) {
 		
@@ -268,9 +268,9 @@ if (!function_exists('rescue_donation_tab_shortcode')) {
 	add_shortcode( 'rescue_donation_tab', 'rescue_donation_tab_shortcode' );
 }
 
-/*----------------------------------------------------*/
-/*  Donation Progress
-/*----------------------------------------------------*/
+/**
+ * Donation Progress
+ */
 if( !function_exists('rescue_progressbar_shortcode') ) {
 	function rescue_progressbar_shortcode( $atts  ) {		
 		extract( shortcode_atts( array(
@@ -300,10 +300,9 @@ if( !function_exists('rescue_progressbar_shortcode') ) {
 	add_shortcode( 'rescue_progressbar', 'rescue_progressbar_shortcode' );
 }
 
-
-/*----------------------------------------------------*/
-/*  Google Map
-/*----------------------------------------------------*/
+/**
+ * Google Map
+ */
 if (! function_exists( 'rescue_shortcode_googlemaps' ) ) :
 	function rescue_shortcode_googlemaps($atts, $content = null) {
 		
@@ -336,9 +335,9 @@ if (! function_exists( 'rescue_shortcode_googlemaps' ) ) :
 	add_shortcode("rescue_googlemap", "rescue_shortcode_googlemaps");
 endif;
 
-/*----------------------------------------------------*/
-/*  Font Awesome Icons
-/*----------------------------------------------------*/
+/**
+ * Font Awesome Icons
+ */
 if (! function_exists( 'RescueFontAwesome' ) ) :
 	function RescueFontAwesome($atts) {
 
@@ -372,9 +371,9 @@ if (! function_exists( 'RescueFontAwesome' ) ) :
 	add_shortcode('icon', 'RescueFontAwesome');
 endif;
 
-/*----------------------------------------------------*/
-/*  Animation Effects
-/*----------------------------------------------------*/
+/**
+ * Animation Effects
+ */
 if (! function_exists( 'rescue_animate_shortcode' ) ) :
 	function rescue_animate_shortcode($atts, $content = null) {
 
@@ -389,6 +388,7 @@ if (! function_exists( 'rescue_animate_shortcode' ) ) :
 
 		// load scripts
 		wp_enqueue_script('rescue_wow');
+		wp_enqueue_script('rescue_wow_init');
 		wp_enqueue_style('rescue_animate');
 
 	    $type = ($type) ? ''.$type. '' : '';
