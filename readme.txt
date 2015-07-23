@@ -7,6 +7,8 @@ Tags: shortcodes, buttons, columns, tabs, animations, spacing, highlight
 Requires at least: 4.0
 Tested up to: 4.2.3
 
+Stable tag: 2.0
+
 A lightweight WordPress shortcodes plugin.
 
 == Description ==
